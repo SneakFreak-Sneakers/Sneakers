@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mens Sneakers</title>
+
+<script src="https://kit.fontawesome.com/19055d34a9.js" crossorigin="anonymous"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.column:hover{
+background-color: black;
+}
+
+/* For four columns in line */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra space at left and right margins */
+.row {
+    margin: 0 -5px;
+    width: 70%;
+    display:inline-block;
+  }
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive columns */
+@media screen and (max-width: 100px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style of cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.header-list {
+  padding:0px;
+  text-align: right;
+}
+
+.header-list li{
+  display:inline-block;
+  margin: 10px 10px 0px 40px;
+  font-size: larger;
+}
+
+.header-list li a{
+  color:azure;
+  text-decoration: none;
+}
+
+#search {
+  display: inline-flex;
+  width: 10rem;
+  height: 2rem;
+  background-color: lightgrey;
+  border-radius: .8rem;
+  font-size: medium;
+}
+
+.aside {
+  width: 23%;
+  display:inline-block;
+  vertical-align: top;
+  position:sticky;
+}
+
+.categories {
+  margin-top: -10px;
+}
+
+.categories li{
+  font-size: 20px;
+  color:azure;
+}
+
+.filter {
+  margin-top: -10px;
+}
+
+.filter li{
+  font-size: 20px;
+  color:azure;
+}
+
+.filter li span{
+  font-size: 16px;
+}
+
+</style>
+</head>
+<body>
+<div>
+  
+  <nav>
+    <ul type="none" class= "header-list">
+
+      <li> <a href= "index.html"> Home</a></li>
+      <li> <a href= "Mens.html">  Men </a></li>
+      <li> <a href= "Womens.html ">  Women </a> </li>
+      <li> <a href= " "> Kids </a> </li>
+      <li> <a href= " "> Customize  </a> </li>
+      <li> <a href= " "> Sneakers &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <input type="text" placeholder="Search"  id= "search"></a> &emsp;</li>
+      <li> <a href=" SneakFreak cart.html"> <i class="fas fa-heart"></i> </a></li>
+      <li style="margin-right: 50px; margin-left: 30px;"> <a href="SneakFreak cart.html "> <i height="40px" class="fas fa-shopping-cart"></i> </a></li>
+
+    </ul>
+
+  </nav>
+
+  <div style="margin-left: 30px; color: azure;">
+
+    <h2 style="font-size: 300%;"><b>Men's Collection</b></h2>
+    <p style="font-size: 125%;" >Find your favourite sneakers just at one click.<br> Show us if you are a real SneakFreak.</p>
+
+  </div>
+</div>
+
+<div class= "aside">
+  <h2 style="color: azure;">Categories</h2><br>
+  <ul type="none" class="categories">
+    <li>Lifestyle</li><br>
+    <li>Jordan</li><br>
+    <li>Running</li><br>
+    <li>Basketball</li><br>
+    <li>Athletics</li><br>
+    <li>Training & Gym</li><br>
+    <li>Football</li><br>
+    <li>Golf</li><br>
+    <li>Walking</li><br>
+  </ul>
+
+  <h2 style="color: azure;">Filter</h2><br>
+  <ul type="none" class="filter">
+    <li> 
+      Gender <br><br>
+      &ensp; <input type="radio" name="gender" value="Male"> <span> Male </span><br>
+      &ensp; <input type="radio" name="gender" value="Female"><span> Female</span> <br>
+      &ensp; <input type="radio" name="gender" value="Unisex"><span> Unisex</span>
+    </li><br>
+    <li> Price <input type="range"></li><br>
+    <li>
+       Size<br><br>
+       &ensp; <input type="checkbox" name="size" value="uk 7"> <span>UK 7</span> <br>
+       &ensp; <input type="checkbox" name="size" value="uk 8"> <span>UK 8</span>  <br>
+       &ensp; <input type="checkbox" name="size" value="uk 8.5"> <span>UK 8.5</span>  <br>
+       &ensp; <input type="checkbox" name="size" value="uk 9"> <span>UK 9</span> <br>
+       &ensp; <input type="checkbox" name="size" value="uk 9.5"> <span>UK 9.5</span> <br>
+       &ensp; <input type="checkbox" name="size" value="uk 10"> <span>UK 10</span><br>
+       &ensp; <input type="checkbox" name="size" value="uk 10.5"> <span>UK 10.5</span><br>
+       &ensp; <input type="checkbox" name="size" value="uk 11"> <span>UK 11</span>
+
+    </li><br>
+    <li>
+       Color <br><br>
+        &ensp; <input type="checkbox" name="color" value="Black"> <span>Black</span> <br>
+        &ensp; <input type="checkbox" name="color" value="Blue"> <span>Blue</span> <br>
+        &ensp; <input type="checkbox" name="color" value="white"> <span>White</span> <br>
+        &ensp; <input type="checkbox" name="color" value="Maroon"> <span>Maroon</span> <br>
+        &ensp; <input type="checkbox" name="color" value="Yellow"> <span>Yellow</span> <br>
+        &ensp; <input type="checkbox" name="color" value="Grey"> <span>Grey</span> <br>
+        &ensp; <input type="checkbox" name="color" value="Red"> <span>Red</span> <br>
+        &ensp; <input type="checkbox" name="color" value="Brown"> <span>Brown</span> <br>
+        &ensp; <input type="checkbox" name="color" value="Multi-color"> <span>Multi-color</span> <br>
+    </li><br>
+    <li> </li><br>
+    <li></li><br>
+    <li></li><br>
+  </ul>
+
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cd9c3592-06f5-4fce-9fca-dee750b70ce3/lebron-19-basketball-shoe-5dpw6F.png" alt="nike air jordan" style="width:100%">
+      <h4>The Nike 1971</h4>
+      <p>Firm-Ground Football Foot <br>
+    1 Color</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0a4c0b16-76cc-4655-961e-51551069d56d/court-vision-mid-shoes-DdhXk6.png" alt="nike air jordan" style="width:100%">
+      <h4>Nike Phantom GT12 Elite</h4>
+      <p>Firm-Ground Football Foot <br>
+    3 Colors</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/b2c12360-bde8-42e4-8630-8408d2bbb62a/giannis-immortality-force-field-basketball-shoe-7MLR3K.png" alt="nike air jordan" style="width:100%">
+      <h4>KD14 By You</h4>
+      <p>Custom Basketball Shoes <br>
+    2 Colors</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f0c6bdc2-b8fe-45f7-a76d-ae1bbf30e156/air-jordan-4-retro-shoe.png" alt="nike air jordan" style="width:100%">
+      <h4>Nike Dunk High Retro</h4>
+      <p>Men's Shoes <br>
+    1 Color</p>
+    </div>
+  </div>
+  <hr>
+  <hr>
+  <div class="column">
+    <div class="card">
+      <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/88bd2660-a67c-4bc5-a606-79a03de31665/lebron-9-shoes-j6jK09.png" alt="nike air jordan" style="width:100%">
+      <h4>KD 14</h4>
+      <p>Basketball Shoes <br>
+    1 Color</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/20bcfae8-866d-4077-bb00-2f4508ff960d/air-max-90-g-nrg-golf-shoes-2nkpMC.png" alt="nike air jordan" style="width:100%">
+      <h4>Kyrie Infinity EP</h4>
+      <p>Basketball Shoes <br>
+    2 Colors</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card"> 
+      <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/40c3c2d4-7449-43dc-9b44-e3ad58181da8/air-zoom-alphafly-next-flyknit-road-racing-shoes-ZgldSQ.png" alt="nike air jordan" style="width:100%">
+      <h4>LeBron 19</h4>
+      <p>BasketBall Shoes <br>
+    1 Color</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6e450b46-7ee6-42ad-93f7-b021076b640c/lebron-witness-6-ep-basketball-shoes-RCsGNc.png" alt="nike air jordan" style="width:100%">
+      <h4>Nike Renew Elate</h4>
+      <p>BasketBall Shoe <br>
+    3 Colors</p>
+    </div>
+  </div>
+  <hr>
+  <hr>
+  <div class="column">
+    <div class="card">
+      <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/dce13202-8cc1-4e69-ba09-20f6bf640cb9/air-max-impact-3-basketball-shoe-J7Pjjx.png" alt="nike air jordan" style="width:100%">
+      <h4>Zoom Freak 3</h4>
+      <p>Men's Shoes <br>
+    1 Color</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/a4b9a6fb-fbc5-485b-ae0b-f1263d3df85a/court-vision-mid-next-nature-shoes-VKCWFj.png" alt="nike air jordan" style="width:100%">
+      <h4>Nike Air Max Dawn</h4>
+      <p>Men's Shoes <br>
+    2 Colors</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/08f86361-0550-4452-bce0-5d7de3f34cb6/flyby-mid-3-basketball-shoes-jFHsxb.png" alt="nike air jordan" style="width:100%">
+      <h4>Nike Air Force 1</h4>
+      <p>Men's Shoes <br>
+    1 Color</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/f9fdb76b-4718-4d52-bb8d-71facffa3937/air-max-plus-shoes-SgCbP7.png" alt="nike air jordan" style="width:100%">
+      <h4>Jordan Zoom Seperate PF</h4>
+      <p>Basketball Shoes <br>
+    2 colors</p>
+    </div>
+  </div>
+  <hr>
+  <hr>
+  <div class="column">
+  <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e4bfbd80-30ec-447d-82a4-43a8ef0e361b/air-zoom-tempo-next-road-running-shoes-chNfdw.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+  3 Colors</p>
+  </div>
+  </div>
+
+  <div class="column">
+  <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ddf4165e-e5b2-4789-a8de-a4e4ac9847bd/zoomx-invincible-run-flyknit-road-running-shoes-b1XP3r.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+  3 Colors</p>
+  </div>
+  </div>
+
+  <div class="column">
+  <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9b285793-66f8-45ed-990b-2680184a7336/air-max-intrlk-lite-shoes-nfMxNF.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+  3 Colors</p>
+  </div>
+  </div>
+
+  <div class="column">
+  <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/19748bd0-5a80-4583-9c3f-e29a24044a58/air-max-270-g-golf-shoe-Z6vCfs.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+  3 Colors</p>
+  </div>
+  </div>
+  <hr>
+  <hr>
+  <div class="column">
+  <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/500e3abc-1c8f-4dbb-99e3-1e55e0b78477/venture-runner-shoe-mT8r8R.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+  3 Colors</p>
+  </div>
+  </div>
+
+  <div class="column">
+  <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/3e59044f-d05c-4b0f-82aa-85188fcfbb83/nikecourt-vapor-lite-hard-court-tennis-shoes-rkl5kR.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+  3 Colors</p>
+  </div>
+  </div>
+
+  <div class="column">
+  <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/bf6fe994-04f3-4fcf-b940-7e7890e8a587/lebron-19-basketball-shoes-4txMNp.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+  3 Colors</p>
+  </div>
+  </div>
+
+  <div class="column">
+  <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/3eb489c7-9793-417c-abfa-217314b2596d/nikecourt-react-vapor-nxt-hard-court-tennis-shoe-hJflW9.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+  3 Colors</p>
+  </div>
+  </div>
+  <hr>
+  <hr>
+  <div class="column">
+  <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/be6f4f03-835b-4ed7-89ef-b90b933cc29a/zoomx-vaporfly-next-2-road-racing-shoes-D4ntS0.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+  3 Colors</p>
+  </div>
+  </div>
+
+  <div class="column">
+  <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bdbed338-76cb-413e-8453-5a222a33dd7e/revolution-6-next-nature-road-running-shoes-NC0P7k.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+  3 Colors</p>
+  </div>
+  </div>
+
+  <div class="column">
+  <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6b64c959-99eb-417a-9460-c5c3870c4d4b/nikecourt-vapor-lite-hard-court-tennis-shoes-rkl5kR.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+  3 Colors</p>
+  </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7b54d24e-ec10-47d3-a848-de9de2194bde/nikecourt-lite-2-hard-court-tennis-shoe-RzbD9h.png" alt="nike air jordan" style="width:100%">
+    <h4>Nike Renew Elate</h4>
+    <p>BasketBall Shoe <br>
+      3 Colors</p>
+    </div>
+  </div>
+  <hr>
+  <hr>
+ 
+</div>
+</body>
+</html>

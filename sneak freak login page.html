@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login form(sneak freak)</title>  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ body{
+    margin:40;
+	padding:50;
+	background: url(pic99.jpg);
+	background-size: cover;
+	background-position: absolute;
+	font-family: sans-serif;
+	}
+.loginform{
+	margin: 200px 500px;
+	float: center;
+    width: 320px;
+    height: 420px;
+	display: flex;
+    background-color: grey;	
+	position: center;
+	box-sizing: border-box;
+	background-color:rgba(105,101,101,0.746);
+    border-radius:10px;
+	text-align:center
+	}
+	
+</style>	
+</head>
+<body>
+
+<div class="loginform">
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center">Login to sneakfreak with social media accounts.</h2>
+      <div class="vl">
+        <span class="vl-innertext">Accounts:</span>
+      </div>
+
+      <div class="col">
+        <a href="https://www.facebook.com/" class="fb btn"> 
+        <i class="fa fa-facebook-official" style="font-size:48px;color:paleturquoise;"></i>
+        </a>
+        <a href="https://twitter.com/" class="twitter btn">
+        <i class="fa fa-twitter-square" style="font-size:48px;color:deepskyblue;"></i>
+        </a>
+        <a href="https://www.google.com/" class="google btn">
+        <i class="fa fa-google-plus" style="font-size:48px;color:lightsalmon;"></i>
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <br> <br> <input type="password" name="password" placeholder="Password" required>
+        <br> <br> <input type="submit" value="Login">
+		<br> <br> <div class="row">
+      <div class="col">
+      <a href="#" style="color:red" class="btn">Sign up</a>
+      </div>
+      <div class="col">
+      <a href="#" style="color:red" class="btn">Forgot password?</a>
+      </div>
+  </form>
+</div>
+	  
+</body>
+
+</html>
